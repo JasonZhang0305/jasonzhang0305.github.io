@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/first.css">
+    <title>主页</title>
+    <style>
+        header {
+            background-image: url(./img/header.png);
+            width: 100vw;
+            height: 100vh;
+            background-position: bottom;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center
+        }
+
+        footer {
+            width: 100vw;
+            height: 30vh;
+            background-image: url(./img/header.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            margin-top: 50px;
+            z-index: 0;
+        }
+        .black:hover{
+            color: rgb(38, 34, 34);
+        }
+        .testhoverplus:hover{
+            transform: scale(1.5);
+        }
+        .light:hover{
+            color: #31c4e9;
+        }
+        .arrowdown:hover{
+            transform: scale(0.8);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg-1"></div>
+    <!-- nav -->
+    <div class="mark"></div>
+    <nav class="nav">
+        <h1 class="logo">Mr. Zhang</h1>
+        <ul class="nav_1">
+            <li><img src="./img/首页.png"> <a href="./index.html">Home</a>
+                <div class="n-line"></div>
+            </li>
+            <li><img src="./img/归档.png"> <a href="./html/text.html">Archives</a>
+                <div class="n-line"></div>
+            </li>
+            <li><img src="./img/音乐.png"> <a href="./html/music.html">Music</a>
+                <div class="n-line"></div>
+            </li>
+            <li><img src="./img/关于.png"> <a href="./html/about.html">About</a>
+                <div class="n-line"></div>
+            </li>
+        </ul>
+        <img class="menu" src="./img/分类.png" alt="" style="width: 25px; height: 25px;">
+    </nav>
+
+    <header class="header-1">
+        <ul class="header-content">    
+            <h1>Jason's Blog</h1>
+            <h2 class="b-text">「Have the courage to follow your heart」</h2>
+            <div class="header-arrow">
+                <img class="arrowdown" src="./img/arrowdown1.png" onclick="window.scrollBy(0,730);"> 
+            </div>                      
+        </ul>                      
+    </header>
+
+    <section class="Sec-1">
+        <div class="left">
+            <div class="person card">
+                <div class="photo">
+                    <img src="./img/Myimg.png" alt="">
+                </div>
+                <div class="name">
+                    <img class="label-img" src="./img/星星.png" alt="">
+                    <h2>Jason</h2>
+                </div>
+                <div class="num">
+                    <div class="num-1">
+                        <p>文章</p>
+                        <p>1</p>
+                    </div>
+                    <div class="num-1">
+                        <p>标签</p>
+                        <p>2</p>
+                    </div>
+                    <div class="num-1">
+                        <p>分类</p>
+                        <p>1</p>
+                    </div>
+                </div>                
+                <div class="github">
+                    <img class="label-img" src="./img/github.png" alt="">
+                    <a href="https://github.com/JasonZhang0305">                                        
+                        <p class="black">My Github</p>
+                    </a>                               
+                </div>  
+
+                <div class="icon">
+                    <ul style="line-height: 25px;">
+                        <i><li>Email: zzj0057@gmail.com</li>                       
+                            <li> Wechat: zzj18810656213</li>
+                        </i>
+                        <li>&nbsp&nbsp&nbsp(联系时请备注来由～)</li>
+                    </ul>                
+                </div>
+            </div>
+            <div class="board card">
+                <!-- 点击喇叭，播放语音 -->
+                <img class="testhoverplus" src="./img/喇叭.png" alt="">              
+                <p>今日もお元気ですか？</p>
+            </div>
+            <div class="text card">
+                <h1>最新文章</h1>
+                <a class="text-col" href="./html/archive/202302/20230218.html">
+                    <img src="./img/text/1min.png" alt="">
+                    <div class="text-col-1">
+                        <p>零基础快速入门软件开发</p>
+                        <p>2023-02-18</p>
+                    </div>
+                </a>
+                <a class="text-col" href="./html/text.html">
+                    <img src="./img/text/2min.png" alt="">
+                    <div class="text-col-1">
+                        <p>待更新</p>
+                        <p>0000-00-00</p>
+                    </div>
+                </a>
+                <a class="text-col" href="./html/text.html">
+                    <img src="./img/text/3min.png" alt="">
+                    <div class="text-col-1">
+                        <p>待更新</p>
+                        <p>0000-00-00</p>
+                    </div>
+                </a>
+                <a class="text-col" href="./html/text.html">
+                    <img src="./img/text/1min.png" alt="">
+                    <div class="text-col-1">
+                        <p>待更新</p>
+                        <p>0000-00-00</p>
+                    </div>
+                </a>
+                <a class="text-col" href="./html/text.html">
+                    <img src="./img/text/2min.png" alt="">
+                    <div class="text-col-1">
+                        <p>待更新</p>
+                        <p>0000-00-00</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- 暂时不显示分类 -->
+            <!-- 
+            <div class="classify card">
+                <div class="classify-title">
+                    <img class="label-img" src="./img/分类gray.png" alt="" style="margin-right: 5px;">
+                    <p>分类</p>
+                     <img class="label-img" src="./img/右箭头.png" alt="" style="margin-left: 183px;"> 
+                </div>
+                <div class="classify-content">
+                    <div class="classify-content-1">
+                        <p>CSS</p>
+                        <p>0</p>
+                    </div>
+                    <div class="classify-content-1">
+                        <p>CSS 布局</p>
+                        <p>0</p>
+                    </div>
+                    <div class="classify-content-1">
+                        <p>Git</p>
+                        <p>0</p>
+                    </div>
+                    <div class="classify-content-1">
+                        <p>HEXO</p>
+                        <p>0</p>
+                    </div>
+                    <div class="classify-content-1">
+                        <p>HTTP 网络请求</p>
+                        <p>0</p>
+                    </div>
+                    <div class="classify-content-1">
+                        <p>JAVA</p>
+                        <p>0</p>
+                    </div>
+                    <div class="classify-content-1">
+                        <p>JavaScript</p>
+                        <p>1</p>
+                    </div>
+                    <div class="classify-content-1">
+                        <p>Ajax</p>
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+            -->
+
+            <!-- 暂时不显示标签 -->
+            <!--
+            <div class="label card">
+                <div class="label-title">
+                    <img class="label-img" src="./img/标签black.png" alt="">
+                    <p>标签</p>
+                </div>
+                <div class="label-content">
+                    <p>jQuery</p>
+                    <p>AJAX</p>
+                    <p>Cookie</p>
+                    <p>CSS</p>
+                    <p>HTML5</p>
+                    <p>Vue3</p>
+                    <p>瀑布流</p>
+                    <p>flex 布局</p>
+                    <p>grid</p>
+                    <p>HTTP</p>
+                    <p>this</p>
+                    <p>ES6</p>
+                    <p>JAVA</p>
+                    <p>算法</p>
+                </div>
+                <div class="line"></div>
+            </div>
+            -->
+        </div>
+        <div class="right">
+            <div class="col col-1 right-scroll">
+                <div class="col-imgMark">
+                    <a class="col-img a1" href="./html/archive/202302/20230218.html">
+                       <!-- 这里面有一个图片 -->
+                    </a>
+                </div>
+
+                <div class="text-2">
+                    <a href="./html/archive/202302/20230218.html"><h1 class="light">零基础快速入门软件开发</h1></a>
+                    <div class="date">
+                        <img src="./img/日期.png" alt="" style="width: 19px;height: 19px;margin-right: 5px;">
+                        <p>发布于：2023-02-18</p>
+                        <div class="line"></div>
+                        <p>Java</p>
+                        <!-- <div class="line"></div>
+                        <p>ES6</p> -->
+                    </div>
+                    <div class="Lrem"> 学习路线：Python基础（「独習python」）→Java基础（哔站韩胜平“30天学Java”）→　坦克大战小游戏
+                        （韩胜平课程资料）→ Mysql（韩胜平哔站韩胜平“30天学Java”）→ Javaweb（黑马程序员“Javaweb实战项目课程”）→ 
+                        Javascript小游戏“贪吃蛇” → 黑马旅游网项目 → 个人blog → 猿来入此校园二手网（基于Springboot框架）
+                    </div>
+                </div>
+            </div>
+            <div class="col col-1 right-scroll">
+                <div class="text-2">
+                    <a href="#"><h1 class="light">待更新</h1></a>
+                    <div class="date">
+                        <img src="./img/日期.png" alt="" style="width: 19px;height: 19px;margin-right: 5px;">
+                        <p>发布于：0000-00-00</p>
+                        <div class="line"></div>
+                        <p>JavaScript</p>
+                        <div class="line"></div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="Lrem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aut voluptatum expedita assumenda
+                        quas, architecto officia ad dolorum obcaecati, iste explicabo quaerat dignissimos. Ab sequi
+                        assumenda eius delectus, blanditiis suscipit!</div>
+                </div>
+                <div class="col-imgMark">
+                    <a class="col-img a2" href="#"></a>
+                </div>
+            </div>
+            <div class="col col-1 right-scroll">
+                <div class="col-imgMark">
+                    <a class="col-img a3" href="#"></a>
+                </div>
+                <div class="text-2">
+                    <a href="#"><h1 class="light">待更新</h1></a>
+                    <div class="date">
+                        <img src="./img/日期.png" alt="" style="width: 19px;height: 19px;margin-right: 5px;">
+                        <p>发布于：0000-00-00</p>
+                        <div class="line"></div>
+                        <p>JavaScript</p>
+                        <div class="line"></div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="Lrem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aut voluptatum expedita assumenda
+                        quas, architecto officia ad dolorum obcaecati, iste explicabo quaerat dignissimos. Ab sequi
+                        assumenda eius delectus, blanditiis suscipit!</div>
+                </div>
+            </div>
+            <div class="col col-1 right-scroll">
+                <div class="text-2">
+                    <a href="#"><h1 class="light">待更新</h1></a>
+                    <div class="date">
+                        <img src="./img/日期.png" alt="" style="width: 19px;height: 19px;margin-right: 5px;">
+                        <p>发布于：0000-00-00</p>
+                        <div class="line"></div>
+                        <p>JavaScript</p>
+                        <div class="line"></div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="Lrem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aut voluptatum expedita assumenda
+                        quas, architecto officia ad dolorum obcaecati, iste explicabo quaerat dignissimos. Ab sequi
+                        assumenda eius delectus, blanditiis suscipit!</div>
+                </div>
+                <div class="col-imgMark">
+                    <a class="col-img a4" href="#"></a>
+                </div>
+            </div>
+            <div class="col col-1 right-scroll">
+                <div class="col-imgMark">
+                    <a class="col-img a5" href="#"></a>
+                </div>
+                <div class="text-2">
+                    <a href="#"><h1 class="light">待更新</h1></a>
+                    <div class="date">
+                        <img src="./img/日期.png" alt="" style="width: 19px;height: 19px;margin-right: 5px;">
+                        <p>发布于：0000-00-00</p>
+                        <div class="line"></div>
+                        <p>JavaScript</p>
+                        <div class="line"></div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="Lrem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aut voluptatum expedita assumenda
+                        quas, architecto officia ad dolorum obcaecati, iste explicabo quaerat dignissimos. Ab sequi
+                        assumenda eius delectus, blanditiis suscipit!</div>
+                </div>
+            </div>
+            <div class="col col-1 right-scroll">
+                <div class="text-2">
+                    <a href="#"><h1 class="light">待更新</h1></a>
+                    <div class="date">
+                        <img src="./img/日期.png" alt="" style="width: 19px;height: 19px;margin-right: 5px;">
+                        <p>发布于：0000-00-00</p>
+                        <div class="line"></div>
+                        <p>JavaScript</p>
+                        <div class="line"></div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="Lrem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aut voluptatum expedita assumenda
+                        quas, architecto officia ad dolorum obcaecati, iste explicabo quaerat dignissimos. Ab sequi
+                        assumenda eius delectus, blanditiis suscipit!</div>
+                </div>
+                <div class="col-imgMark">
+                    <a class="col-img a6" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="mark-2">
+            <p>@2023 By Jason</p>
+            <p>Powered by 
+                <a href="https://space.bilibili.com/664576176">Zhou</a>
+            </p>
+            <p>Live today as if it were your last day.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/blog.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/jquery3.5.1.js"></script>
+</body>
+
+</html>

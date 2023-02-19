@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/music.css">
+    
+    <title>音乐</title>
+    <style>
+        .testhover:hover{
+            transform: scale(1.1);
+        }
+        .testhoverplus:hover{
+            transform: scale(1.5);
+        }
+    </style>
+
+</head>
+<body>
+    <!-- nav -->
+    <div class="mark"></div>
+    <nav class="nav">
+        <h1 class="logo">Mr. Zhang</h1>
+        <ul class="nav_1">
+            <li><img src="../img/首页.png"> <a href="../index.html" >Home</a>
+                <div class="n-line"></div>
+            </li>
+            <li><img src="../img/归档.png"> <a href="./text.html">Archives</a>
+                <div class="n-line"></div>
+            </li>
+            <li><img src="../img/音乐.png"> <a href="./music.html">Music</a>
+            <div class="n-line"></div>
+            </li>
+            <li><img src="../img/关于.png"> <a href="./about.html">About</a>
+                <div class="n-line"></div>
+            </li>
+        </ul>
+        <img class="menu" src="../img/分类.png" alt="" style="width: 25px; height: 25px;">
+    </nav>
+
+    <header>
+        <section>
+            <div class="Up">
+                <div class="Me card">
+                    <div class="title">
+                        <img src="../img/music/title.png" alt="">
+                    </div>
+                    <p class="name">Jason's Music Space</p>
+                    <div class="classify">
+                        <div class="like">
+                            "Welcome to my studio!"
+                        </div>
+                    </div>
+                    <div class="qqmusic">
+                        <p>&nbsp心动就点它&nbsp</p>
+                        <img src="../img/music/爱心.png" style="width: 20px;height: 20px;" class="testhoverplus" id="nice" title="赞">                
+                    </div>
+                    <div class="icon">                       
+                        <p>心动次数:
+                            <input id="niceValue" value="0" style="width: 20px; text-align: center;">  
+                        </p> 
+                    </div>
+                    <div class="mode" title="暗夜模式">                       
+                    </div>
+                </div>
+                <!-- 插入图片，跳转到视频播放网页 -->
+                <div class="recommend card">
+                    <h1>推荐MV</h1>
+                    <div class="line"></div>
+                    <div class="r-1">
+                        <div class="m-1 mv">        
+                            <a href="https://www.bilibili.com/video/BV1vA411U7qi?t=2.8">
+                                <img class="testhover" type="image/png" src="../img/music/Windsong.png" width="100%" height="100%" title="风之诗">
+                            </a>                          
+                        </div>
+                        <p>&nbsp&nbsp</p>
+                        <div class="m-1 mv">
+                            <a href="https://www.bilibili.com/video/BV1wV41147JS/?spm_id_from=333.337.search-card.all.click&vd_source=126a675e30d3918492f9fe1ca7b624d4">
+                                <img class="testhover" type="image/png" src="../img/music/Naruto.png" width="100%" height="100%" title="Wake火の意志">
+                            </a>             
+                        </div>
+                    </div>
+                    <div class="r-1">
+                        <div class="m-1 mv">
+                            <a href="https://www.bilibili.com/video/BV1mt411Y7He/?spm_id_from=333.788.recommend_more_video.0&vd_source=126a675e30d3918492f9fe1ca7b624d4">
+                                <img class="testhover" type="image/png" src="../img/music/mcml.png" width="100%" height="100%" title="Merry Christmas,Mr. Lawrence">
+                            </a>
+                        </div>
+                        <p>&nbsp&nbsp</p>
+                        <div class="m-1 mv">
+                            <a href="https://www.bilibili.com/video/BV1YG4y1P7H9?t=70.3">
+                                <img class="testhover" type="image/png" src="../img/music/summerwind.png" width="100%" height="100%" title="夏天的风">
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="play card">
+                    <div class="p-pen">
+                        <img src="../img/music/play.png" alt="">
+                        <div class="rotate">
+                            <img src="../img/music/1-bage.png" alt="">
+                        </div>
+                    </div>
+                    <div class="tool">
+                        <div class="prev" title="上一首"></div>
+                        <div class="t-play" title="播放"></div>
+                        <div class="next" title="下一首"></div>
+                    </div>
+                    <audio  src="../music/1.mp3" class="m_mp3" loop style="width: 100%;" controls></audio>
+                </div>
+            </div>
+
+            <div class="Down">
+                <div class="m_content card">
+                    <h1>My Music</h1>
+                    <ul class="m_list">
+                        <li class="m1" datasrc="../music/1.mp3" title="我太笨-锤娜丽莎">
+                            <div class="col">
+                                <div class="m_img">
+                                    <img src="../img/music/1-bage.png" alt="">
+                                </div>
+                                <div class="m_text">
+                                    <p class="m_name">エターナルポーズ</p>
+                                    <div class="m_text_down">
+                                        <img src="../img/music/爱心.png" style="width: 20px;height: 20px;">
+                                        <img src="../img/music/hq-line.png" style="width: 20px;height: 20px;margin: 0 10px;">
+                                        <p>One Piece</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line_list"></div>
+                        </li>
+                        <li class="m2" datasrc="../music/2.mp3" title="邓紫棋-Walk on Water">
+                            <div class="col">
+                                <div class="m_img">
+                                    <img src="../img/music/2-bage.png" alt="">
+                                </div>
+                                <div class="m_text">
+                                    <p class="m_name">Walk on Water</p>
+                                    <div class="m_text_down">
+                                        <img src="../img/music/爱心.png" style="width: 20px;height: 20px;">
+                                        <img src="../img/music/hq-line.png" style="width: 20px;height: 20px;margin: 0 10px;">
+                                        <p>邓紫棋</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line_list"></div>
+                        </li>
+                        <li class="m3" datasrc="../music/3.mp3" title="许靖韵-谢谢对不起">
+                            <div class="col">
+                                <div class="m_img">
+                                    <img src="../img/music/3-bage.png" alt="">
+                                </div>
+                                <div class="m_text">
+                                    <p class="m_name">起风了</p>
+                                    <div class="m_text_down">
+                                        <img src="../img/music/爱心.png" style="width: 20px;height: 20px;">
+                                        <img src="../img/music/hq-line.png" style="width: 20px;height: 20px;margin: 0 10px;">
+                                        <p>周深</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line_list"></div>
+                        </li>
+                        <li class="m4" datasrc="../music/4.mp3" title="ZAYN-Entertainer">
+                            <div class="col">
+                                <div class="m_img">
+                                    <img src="../img/music/4-bage.png" alt="">
+                                </div>
+                                <div class="m_text">
+                                    <p class="m_name">Entertainer</p>
+                                    <div class="m_text_down">
+                                        <img src="../img/music/爱心.png" style="width: 20px;height: 20px;">
+                                        <img src="../img/music/hq-line.png" style="width: 20px;height: 20px;margin: 0 10px;">
+                                        <p>ZAYN</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line_list"></div>
+                        </li>
+                        <li class="m5" datasrc="../music/5.mp3" title="The Kid LAROI-WITHOUT YOU">
+                            <div class="col">
+                                <div class="m_img">
+                                    <img src="../img/music/5-bage.png" alt="">
+                                </div>
+                                <div class="m_text">
+                                    <p class="m_name">Wonderful U</p>
+                                    <div class="m_text_down">
+                                        <img src="../img/music/爱心.png" style="width: 20px;height: 20px;">
+                                        <img src="../img/music/hq-line.png" style="width: 20px;height: 20px;margin: 0 10px;">
+                                        <p>AGA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line_list"></div>
+                        </li>
+                        <li class="m6" datasrc="../music/6.mp3" title="张特星-年少的欢喜">
+                            <div class="col">
+                                <div class="m_img">
+                                    <img src="../img/music/6-bage.png" alt="">
+                                </div>
+                                <div class="m_text">
+                                    <p class="m_name">年少的欢喜</p>
+                                    <div class="m_text_down">
+                                        <img src="../img/music/爱心.png" style="width: 20px;height: 20px;">
+                                        <img src="../img/music/hq-line.png" style="width: 20px;height: 20px;margin: 0 10px;">
+                                        <p>张特星</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line_list"></div>
+                        </li>
+                        <li class="m7" datasrc="../music/7.mp3" title="Isac Elliot-Waving At Cars">
+                            <div class="col">
+                                <div class="m_img">
+                                    <img src="../img/music/7-bage.png" alt="">
+                                </div>
+                                <div class="m_text">
+                                    <p class="m_name">开始</p>
+                                    <div class="m_text_down">
+                                        <img src="../img/music/爱心.png" style="width: 20px;height: 20px;">
+                                        <img src="../img/music/hq-line.png" style="width: 20px;height: 20px;margin: 0 10px;">
+                                        <p>Gaho</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line_list"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="m_img_bg card">
+                   <h1>MUSIC</h1>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="mark-2">
+                <p>@2023 By Jason</p>
+                <p>Powered by 
+                    <a href="https://space.bilibili.com/664576176">Zhou</a>
+                </p>
+                <p>Live today as if it were your last day.</p>
+            </div>
+        </footer>
+    </header>
+   <script type="text/javascript">
+        var niceNum = document.getElementById('niceValue');
+        var add = document.getElementById('nice');
+        add.onclick = function addnice(){
+            niceNum.value++;  
+        }    
+    </script>
+    <script src="../js/jquery3.5.1.js"></script>
+    <script src="../js/music.js"></script>
+</body>
+</html>
