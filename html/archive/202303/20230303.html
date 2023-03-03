@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../archive.css">
+    <title>日记</title>
+    <style>
+        p{
+            color: black;
+            line-height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mark"></div>
+    <nav class="nav">
+        <h1 class="logo">Mr. Zhang</h1>
+        <ul class="nav_1">
+            <li><img src="../../../img/首页.png"> <a href="../../../index.html">Home</a>
+                <div class="n-line"></div>
+            </li>
+            <li><img src="../../../img/归档.png"> <a href="../.././text.html">Archives</a>
+                <div class="n-line"></div>
+            </li>
+            <li><img src="../../../img/音乐.png"> <a href="../.././music.html">Music</a>
+            <div class="n-line"></div>
+            </li>
+            <li><img src="../../../img/关于.png"> <a href="../.././about.html">About</a>
+                <div class="n-line"></div>
+            </li>
+        </ul>
+        <img class="menu" src="../../../img/分类.png" alt="" style="width: 25px; height: 25px;">
+    </nav>
+
+    <header>  
+        <div style="margin-top: 100px;">    
+            <h1 align="center">数据分析方法及工具</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="col col-name">
+            <div class="col-n-con">
+                <div class="col-line"></div>
+                <div class="name">作者：Jason</div>
+                <div class="col-line"></div>
+            </div>
+            <h5>日期: 2023-03-03</h5><br>
+        </div>
+
+        <div class="col col-content">
+            <div class="word">
+                <p>
+                    最近几天在学习各种计算机技能时感觉遇到了很大的瓶颈，感觉工具的使用其实并不难，甚至是到了工作中慢慢提升倒是也可以。重要的还是要掌握基础知识，并且知道要用这些知识以及工具去完成什么事情。这几天结合自己以前掌握的统计学，经济学和编程等知识，对数据分析进行了进一步的研究。以下是对自己学习的知识做一个总结。
+                </p>
+                <br>
+                <p>
+                    市场上现在主要有两种与数据高度相关的职位，一种是数据分析师（Data Analyst），一种是数据科学家(Data Scientist)。数据分析师的工作更偏向于业务，而数据科学家则是通过对大数据的分析，抽象出一些规律，用于算法模型。但无论是面向业务，还是面向算法，最终的目标都是要从数据中得到有价值的信息并推动公司的发展。专业性上来看，数据科学家更像是一个开发者，或者说是算法研究员，需要掌握更高度的知识，比如机器学习和深度学习。说到这里，不得不谈一下AI的两个主要应用场景，自然语言处理和计算机视觉。这两个方向其实也是包含在了数据科学家里的。而数据分析师解决的问题可能会更加具体一些。比如分析某一个具体的业务表现，或者通过数据分析出一些观点辅助决策。我个人觉得数据分析与其说是一个职业，更像是一项技能，能够应用于金融，咨询，市场，互联网产品，运营等各种各样的业务场景。以前实习的时候，也总是能用到一些数据分析的技能，但总感觉零零散散，并且不够专业。如今，做经济学的实证研究，也发现和数据分析脱不了关系。所以，还是很有必要成体系地学习，总结一下这项技能的。
+                </p>
+                <br>
+                <p>
+                    数据分析听起好像很高大上的样子，但其实也没那么难，其实大部分人学excel多少也算是有一些经验。就算是机器学习这样貌似很高深的知识其实早在大学时就接触过。比如回归分析也是机器学习的一部分。作为前置知识，掌握基础的统计学即可。那么，究竟什么是数据分析，或者应该问数据该怎么分析。这里看了戴师兄的课程，感觉他总结的很好。数据分析就是观测数据，发现问题，提出假设并验证，从数据中得到启发，并将观点应用于实践中去检验，然后再进行新的一轮循环。
+                </p>
+                <br>
+                <div class="img">
+                    <img src="../img/bas.png" alt="" title="数据分析总结">
+                </div>
+                <br>
+                <p class="word">
+                    数据分析也可以遵循一定的流程进行，包括以下几个流程，每个流程都有对于的工具和方法论。
+                </p>      
+            </div>
+            <div class="img">
+                <img src="../img/bap.png" alt="" title="数据分析流程">
+            </div>
+            <br>
+            <div class="word">
+                <p>工具篇：Python，R，SQL，Tableau，Excel等</p>
+                <p>
+                    做业务的数据分析基本掌握以上几个工具就足够了。Python确实功能强大，但学习成本也确实高。首先这是一门编程语言，要想用python做数据分析，必须得有编程思维。Python在数据分析领域有几个常用库，numpy，pandas和matplotlib。说是话这几个库真的都能难用，而且都有更简单高效的替代品。用pandas做数据清洗真是是极其麻烦，10万条以下的数据还是能用Excel就用Excel吧。做一些描述性分析其实一般都可以用Excel来完成，matplotlib做可视化真的很麻烦，而且做出来的图片也很丑。用Tableau或PowerBI又简单又fancy ，但还是要克金。然后推断性统计用R就够了，也比Python简单。所以总的来说，Python定位是处理大数据的，但处理大数据又不是数据分析师或者业务人员干的活，所以Python对于业务数据分析来说实用性确实不怎么高。但是吐槽了Python这么多，不得不说Python的爬虫确实很有用，而且Python帮助初学者入门编程确实也很友好，学会Python编程也可以完成一些自动化办公的需求（面向Office编程）。Python的spider可以帮助你在网页上准确高效地收集信息。Python爬虫强推尚硅谷的课程，内容全面且案例充实。调用scrapy库可以轻松实现各种基础的爬虫工作。其实不自己敲Python代码也行，有很多可视化图形操作页面的爬虫软件也能帮你完成爬虫任务，只不过要克金。但爬虫难的不是操作，而是如何应对反爬虫。这方面还得遇到问题自己去分析解决。但编程真的是有问题上百度，90%的问题都会得到解决，前提是你知道怎么描述这个问题。然后学习SQL的作用是为了从数据库中提取数据，SQL的查询语句应该重点学习一下，但如果是非互联网公司，数据都是直接从网上下载的，比如财务数据之类的，学习SQL的意义可能也不大吧。所以说数据分析还得回归到分析上才行，工具的使用不过是为了达成某一目的而使用的。
+                </p><br>
+            </div>
+            <div class="word">
+                <p>方法篇：</p>
+                <p>
+                    在选择方法之前，首先得明确目的。再明确目标的基础上，将复杂的任务拆解成简单的任务。如果你的分析目的是想将复杂问题变得简单，就可以使用逻辑树分析方法，例如经典的费米问题就可以用这个分析方法。如果你的分析目的是做行业分析，那么就可以用PEST分析方法，例如你想要研究中国少儿编程行业。如果你想从多个角度去思考问题，那么就可以用多维度拆解分析方法，例如找相亲对象，需要从多个角度去分析是否合适。如果你想进行对比分析，就要用到对比分析方法，例如你朋友问自己胖吗，就是在对比。如果你想找到问题发生的原因，那么就要用到假设检验分析方法，其实破案剧里警察就是用这个方法来破案的。如果你想知道A和B有什么关系，就要用到相关分析方法，例如豆瓣在我们喜欢的电影下面推荐和这部分电影相关的电影。如果你想对用户留存和流失分析，就要用到群组分析方法，例如微博用户留存分析。如果你想对用户按价值分类，那么就要用到RFM分析方法，例如信用卡的会员服务，就是对用户按价值分类，对不同用户使用不同的营销策略，从而做到精细化运营。如果你想分析用户的行为或者做产品运营，就要用到AARRR模型分析方法，例如对拼多多的用户进行分析。如果你想分析用户的转化，就要用到漏斗分析方法，例如店铺本周销量下降，想知道是中间哪个业务环节出了问题。这几个分析方法是最常用的，掌握它们，可以帮助解决大部分问题。后文会分别讲解各个分析方法，最后再通过几个案例来看如何在实际的问题中灵活使用这些分析方法。
+                </p>
+                <p>
+                    在工作或者面试中，会经常听到分析思维、分析思路、分析方法。这三个词语有什么关系呢？其实简单来说，它们都是指分析方法。因为分析方法是将零散的想法整理成有条理的分析思路。有了分析思路，你就具备了分析思维。找到原因就完事了吗？还不行，要找到对应的办法才是分析的终点。所以，找到原因以后，还要针对原因给出建议，或者提出可以实施的解决方案。在决策这一步，常用的分析方法是回归分析或者AARRR分析。需要注意的是：
+                </p>
+                <p>
+                    （1）做决策的选项不能太多。太多的选项不仅会增加决策的成本，还会让人迷失，无从下手。相对简单的问题，需要4个选项左右；相对复杂的问题，需要4～7个选项；
+                </p>
+                <p>
+                    （2）决策要是可以落地的具体措施，这样决策者才能根据措施，合理安排资源，把措施变成行动。
+                </p>
+                <p>
+                    这样来看，数据分析的方法同样也能归纳成一般性的解决问题的方法。只是，你的所有观点需要基于数据。想要更进一步地学习数据分析的同学可以参考 <a href="https://yrzu9y4st8.feishu.cn/docs/doccnzwzLDGEnGoVsF6YT9Sh2Zd#iF8B6lhttps://yrzu9y4st8.feishu.cn/docs/doccnzwzLDGEnGoVsF6YT9Sh2Zd#iF8B6l">《戴师兄笔记》</a>
+                </p>
+                <br>
+            </div>
+        </div>
+
+        <div class="col col-tag">
+            <h1>tag: Data Analysis</h1>
+            <div class="line"></div>
+            <div class="m-tag">
+                <h3>推荐指数:</h3>
+                <img src="../../../img/星星.png" >
+                <img src="../../../img/星星.png" >
+                <img src="../../../img/星星.png" >
+                <img src="../../../img/星星.png" >
+            </div>
+        </div>
+
+        <div class="col col-t-img">
+            <img src="../../../img/Myimg.png">
+            <h1>Jason</h1>
+            <p>情けは人のためならず</p>
+        </div>
+    </section>
+    <footer>
+        <div class="mark-2">
+            <p>@2023 By Jason</p>
+            <p>Powered by 
+                <a href="https://space.bilibili.com/664576176">Zhou</a>
+            </p>
+            <p>Live today as if it were your last day.</p>
+        </div>
+    </footer>
+    <script src="../archive.js"></script>
+</body>
+
+</html>
